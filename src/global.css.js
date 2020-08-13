@@ -34,9 +34,9 @@ export default createGlobalStyle`
   }
 
   body {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-family: "Karla",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     line-height: 1;
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     color: #000;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
@@ -46,6 +46,7 @@ export default createGlobalStyle`
     -webkit-font-feature-settings: "pnum";
     font-feature-settings: "pnum";
     font-variant-numeric: proportional-nums;
+    text-transform: lowercase;
   }
 
   ol, ul {
@@ -60,6 +61,10 @@ export default createGlobalStyle`
   q:before, q:after {
     content: '';
     content: none;
+  }
+
+  button {
+  	text-transform: lowercase;
   }
 
   table {
@@ -90,5 +95,13 @@ export default createGlobalStyle`
 
   p {
     margin-bottom: 2rem;
+  }
+
+  .musical-note {
+  	text-transform: none;
+  }
+
+  .nofocus:focus {
+		outline: none;
   }
 `;

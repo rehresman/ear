@@ -11,14 +11,19 @@
       "warn",
       "single"
     ],
-    "prettier/prettier": "warn",
+    "prettier/prettier": ["warn", {"useTabs": true}],
     "react/prop-types": "warn",
     "no-unused-vars": "warn"
   },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:jsx-a11y/recommended"
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+    "prettier/babel",
+    "prettier/standard",
+    "prettier/react",
+
   ],
   "plugins": ["prettier", "jsx-a11y"],
   "settings": {
